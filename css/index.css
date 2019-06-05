@@ -273,11 +273,14 @@ footer a {
   font-size: 3rem;
 }
 @media (max-width: 500px) {
+  nav header {
+    font-size: 1rem;
+  }
   section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 400px;
+    width: 300px;
     border: 1px solid red;
   }
   section img {
@@ -296,5 +299,88 @@ footer a {
   }
   article {
     height: 1000px;
+  }
+  aside {
+    height: 550px;
+  }
+  aside .section1 h3 {
+    font-size: 1rem;
+  }
+  aside .section1 h4 {
+    font-size: 1rem;
+  }
+  aside .section2 h3 {
+    font-size: 1rem;
+  }
+  aside .section2 h4 {
+    font-size: 1rem;
+  }
+  aside .section3 h3 {
+    font-size: 1rem;
+  }
+  aside .section3 h4 {
+    font-size: 1rem;
+  }
+  aside .section4 h3 {
+    font-size: 1rem;
+  }
+  aside .section4 h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  nav header {
+    font-size: 1rem;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    border: 1px solid red;
+  }
+  section img {
+    width: 200px;
+    height: 200px;
+  }
+  section h1 {
+    font-size: 2rem;
+  }
+  section h2 {
+    font-size: 1rem;
+  }
+  section button {
+    font-size: 1rem;
+    background: pink;
+  }
+  article {
+    height: 1000px;
+  }
+  aside {
+    height: 550px;
+  }
+  aside .section1 h3 {
+    font-size: 1rem;
+  }
+  aside .section1 h4 {
+    font-size: 1rem;
+  }
+  aside .section2 h3 {
+    font-size: 1rem;
+  }
+  aside .section2 h4 {
+    font-size: 1rem;
+  }
+  aside .section3 h3 {
+    font-size: 1rem;
+  }
+  aside .section3 h4 {
+    font-size: 1rem;
+  }
+  aside .section4 h3 {
+    font-size: 1rem;
+  }
+  aside .section4 h4 {
+    font-size: 1rem;
   }
 }
