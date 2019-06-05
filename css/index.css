@@ -272,7 +272,7 @@ footer {
 footer a {
   font-size: 3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   nav header {
     font-size: 1rem;
   }
@@ -280,7 +280,7 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 300px;
+    width: 600px;
     border: 1px solid red;
   }
   section img {
@@ -328,7 +328,7 @@ footer a {
     font-size: 1rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   nav header {
     font-size: 1rem;
   }
@@ -336,7 +336,7 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 600px;
+    width: 300px;
     border: 1px solid red;
   }
   section img {
