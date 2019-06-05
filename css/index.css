@@ -180,3 +180,51 @@ section button {
   margin-left: 50px;
   border: solid red 1px;
 }
+article {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+article left-side {
+  margin-left: 50px;
+  width: 200px;
+}
+article right-side {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 600px;
+}
+article h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+article h3 {
+  padding: 5px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+article p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  height: 600px;
+}
+aside {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+aside h2 {
+  font-size: 3rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+aside h3 {
+  font-size: 2rem;
+}
+aside h4 {
+  font-size: 1.5rem;
+}
