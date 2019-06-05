@@ -69,6 +69,14 @@ html, body {
 	justify-content: flex-end;
 }
 
+//flex-start-mixin
+.flex-start {
+	margin: @margin;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
 
 nav header {
 	.flex-end;
@@ -153,26 +161,84 @@ article p {
 }
 
 //aside styles
+
 aside {
-	margin: @margin;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	height: 600px;
+	border: 1px solid red;
+} 
+
+aside .section1 {
+	.flex-start;
+	justify-content: space-evenly;
+	background: grey;
+}
+
+aside .section2 {
+	.flex-start;
+	justify-content: space-evenly;
+}
+
+aside .section3 {
+	.flex-start;
+	justify-content: space-evenly;
+	background: grey;
+}
+
+aside .section4 {
+	.flex-start;
+	justify-content: space-evenly;
 }
 
 aside h2 {
 	font-size: 3rem;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	.flex-start;
+	border-bottom: 1px solid grey;
 }
 
 aside h3 {
 	font-size: 2rem;
+	padding: 20px;
 }
 
 aside h4 {
-	font-size: 1.5rem;
+	font-size: 2rem;
+	padding: 20px;
 }
 
+//footer styles 
+footer {
+	height: 100px;
+	margin: @margin;
+}
+
+footer a {
+	font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+	section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 400px;
+		border: 1px solid red;
+	}
+	section img {
+		width: 200px;
+		height: 200px;
+	}
+	section h1 {
+		font-size: 2rem;
+	}
+	section h2 {
+		font-size: 1rem;
+	}
+	section button {
+		font-size: 1rem;
+		background: pink;
+	}
+
+article {
+	height: 1000px;
+}
+}
