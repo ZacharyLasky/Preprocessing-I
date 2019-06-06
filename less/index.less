@@ -90,38 +90,46 @@ section {
 	margin: @margin;
 	height: 900px;
 	background-color: grey;
-}
 
-section img {
-	height: 50%;
-	margin: @margin;
-}
+	img {
+		height: 50%;
+		margin: @margin;
+	}
 
-section h1 {
-	font-size: 3.5rem;
-	margin-left: @margin;
-}
+	h1 {
+		font-size: 3.5rem;
+		margin-left: @margin;
+	}
 
-section h2 {
-	font-size: 2rem;
-	margin-left: @margin;
-	margin-top: 1rem;
-	margin-bottom: 20px;
-	padding: 1rem;
-	border-bottom: 1px solid white;
-}
+	h2 {
+		font-size: 2rem;
+		margin-left: @margin;
+		margin-top: 1rem;
+		margin-bottom: 20px;
+		padding: 1rem;
+		border-bottom: 1px solid white;
+	}
 
-section h3 {
-	font-size: 1.5rem;
-	margin-left: @margin;
-}
+	h3 {
+		font-size: 1.5rem;
+		margin-left: @margin;
+	}
 
-section button {
+	button {
 	font-size: 2.5rem;
 	margin-top: @margin;
 	margin-left: @margin;
 	border: solid red 1px;
+	}
 }
+
+
+
+
+
+
+
+
 
 //article styles 
 article {
@@ -129,35 +137,34 @@ article {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-}
-
-article left-side {
-	margin-left: @margin;
-	width: 200px;
-}
-
-article right-side {
-	margin-left: @margin;
-	margin-right: @margin;
-	width: 600px;
 	
-}
+	left-side {
+		margin-left: @margin;
+		width: 200px;
+	}
 
-article h2 {
-	font-size: 2.5rem;
-	margin-bottom: 5px;
-}
+	right-side {
+		margin-left: @margin;
+		margin-right: @margin;
+		width: 600px;
+	}
 
-article h3 {
-	padding: 5px;
-	font-size: 1.5rem;
-	border: 1px solid black;
-}
+	h2 {
+		font-size: 2.5rem;
+		margin-bottom: 5px;
+	}
 
-article p {
-	margin-top: 10px;
-	font-size: 1.5rem;
-	height: 600px;
+	h3 {
+		padding: 5px;
+		font-size: 1.5rem;
+		border: 1px solid black;
+	}
+
+	p {
+		margin-top: 10px;
+		font-size: 1.5rem;
+		height: 600px;
+	}
 }
 
 //aside styles
@@ -165,56 +172,55 @@ article p {
 aside {
 	height: 600px;
 	border: 1px solid red;
+
+	.section1 {
+		.flex-start;
+		justify-content: space-evenly;
+		background: grey;
+	}
+
+	.section2 {
+		.flex-start;
+		justify-content: space-evenly;
+	}
+	
+	.section3 {
+		.flex-start;
+		justify-content: space-evenly;
+		background: grey;
+	}
+	
+	.section4 {
+		.flex-start;
+		justify-content: space-evenly;
+	}
+	
+	h2 {
+		font-size: 3rem;
+		.flex-start;
+		border-bottom: 1px solid grey;
+	}
+	
+	h3 {
+		font-size: 2rem;
+		padding: 20px;
+	}
+	
+	h4 {
+		font-size: 2rem;
+		padding: 20px;
+	}
 } 
-
-aside .section1 {
-	.flex-start;
-	justify-content: space-evenly;
-	background: grey;
-}
-
-aside .section2 {
-	.flex-start;
-	justify-content: space-evenly;
-}
-
-aside .section3 {
-	.flex-start;
-	justify-content: space-evenly;
-	background: grey;
-}
-
-aside .section4 {
-	.flex-start;
-	justify-content: space-evenly;
-}
-
-aside h2 {
-	font-size: 3rem;
-	.flex-start;
-	border-bottom: 1px solid grey;
-}
-
-aside h3 {
-	font-size: 2rem;
-	padding: 20px;
-}
-
-aside h4 {
-	font-size: 2rem;
-	padding: 20px;
-}
 
 //footer styles 
 footer {
 	height: 100px;
 	margin: @margin;
-}
 
-footer a {
-	font-size: 3rem;
+	a {
+		font-size: 3rem;
+	}
 }
-
 
 //tablet media query
 @media (max-width: 950px) {
@@ -228,53 +234,64 @@ footer a {
 		justify-content: center;
 		width: 600px;
 		border: 1px solid red;
-	}
-	section img {
-		width: 200px;
-		height: 200px;
-	}
-	section h1 {
-		font-size: 2rem;
-	}
-	section h2 {
-		font-size: 1rem;
-	}
-	section button {
-		font-size: 1rem;
-		background: pink;
-	}
 
+		img {
+			width: 200px;
+			height: 200px;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1rem;
+		}
+
+		button {
+			font-size: 1rem;
+			background: pink;
+		}
+	}
+	
 	article {
 	height: 1000px;
 	}
 
 	aside {
 		height: 550px;
-	}
-	aside .section1 h3 {
-		font-size: 1rem;
-	}
-	aside .section1 h4 {
-		font-size: 1rem;
-	}
-	aside .section2 h3 {
-		font-size: 1rem;
-	}
-	aside .section2 h4 {
-		font-size: 1rem;
-	}
-	aside .section3 h3 {
-		font-size: 1rem;
-	}
-	aside .section3 h4 {
-		font-size: 1rem;
-	}
-	aside .section4 h3 {
-		font-size: 1rem;
-	}
-	aside .section4 h4 {
-		font-size: 1rem;
-	}
+	
+		.section1 h3 {
+			font-size: 1rem;
+		}
+
+		.section1 h4 {
+			font-size: 1rem;
+		}
+
+		.section2 h3 {
+			font-size: 1rem;
+		}
+
+		.section2 h4 {
+			font-size: 1rem;
+		}
+
+		.section3 h3 {
+			font-size: 1rem;
+		}
+		
+		.section3 h4 {
+			font-size: 1rem;
+		}
+
+		.section4 h3 {
+			font-size: 1rem;
+		}
+		
+		.section4 h4 {
+			font-size: 1rem;
+		}
 }
 
 //mobile media query
@@ -289,51 +306,54 @@ footer a {
 		justify-content: center;
 		width: 300px;
 		border: 1px solid red;
-	}
-	section img {
-		width: 200px;
-		height: 200px;
-	}
-	section h1 {
-		font-size: 2rem;
-	}
-	section h2 {
-		font-size: 1rem;
-	}
-	section button {
-		font-size: 1rem;
-		background: pink;
+	
+		img {
+			width: 200px;
+			height: 200px;
+		}
+		
+		h1 {
+			font-size: 2rem;
+		}
+		
+		h2 {
+			font-size: 1rem;
+		}
+		button {
+			font-size: 1rem;
+			background: pink;
+		}
 	}
 
 	article {
-	height: 1000px;
+		height: 1000px;
 	}
 
 	aside {
 		height: 550px;
-	}
-	aside .section1 h3 {
-		font-size: 1rem;
-	}
-	aside .section1 h4 {
-		font-size: 1rem;
-	}
-	aside .section2 h3 {
-		font-size: 1rem;
-	}
-	aside .section2 h4 {
-		font-size: 1rem;
-	}
-	aside .section3 h3 {
-		font-size: 1rem;
-	}
-	aside .section3 h4 {
-		font-size: 1rem;
-	}
-	aside .section4 h3 {
-		font-size: 1rem;
-	}
-	aside .section4 h4 {
-		font-size: 1rem;
-	}
+	
+		.section1 h3 {
+			font-size: 1rem;
+		}
+		.section1 h4 {
+			font-size: 1rem;
+		}
+		.section2 h3 {
+			font-size: 1rem;
+		}
+		.section2 h4 {
+			font-size: 1rem;
+		}
+		.section3 h3 {
+			font-size: 1rem;
+		}
+		.section3 h4 {
+			font-size: 1rem;
+		}
+		.section4 h3 {
+			font-size: 1rem;
+		}
+		.section4 h4 {
+			font-size: 1rem;
+		}
 }
