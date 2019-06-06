@@ -57,9 +57,11 @@ html, body {
 	height: 100%;
 }
 
-
 //margin variable
 @margin: 50px;
+
+//font-size variable
+@font: 1rem;
 
 //flex-end-mixin
 .flex-end {
@@ -76,7 +78,6 @@ html, body {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 }
-
 
 nav header {
 	.flex-end;
@@ -122,14 +123,6 @@ section {
 	border: solid red 1px;
 	}
 }
-
-
-
-
-
-
-
-
 
 //article styles 
 article {
@@ -262,35 +255,35 @@ footer {
 		height: 550px;
 	
 		.section1 h3 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 
 		.section1 h4 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 
 		.section2 h3 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 
 		.section2 h4 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 
 		.section3 h3 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 		
 		.section3 h4 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 
 		.section4 h3 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 		
 		.section4 h4 {
-			font-size: 1rem;
+			font-size: @font;
 		}
 }
 
